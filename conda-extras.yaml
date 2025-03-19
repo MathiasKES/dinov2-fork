@@ -1,6 +1,7 @@
 name: dinov2-extras
 channels:
-  - defaults
+# Remove defaults channel due to Anaconda TOS
+#  - defaults
   - pytorch
   - nvidia
   - xformers
