@@ -24,7 +24,6 @@ dependencies:
     - cuml-cu11
     - mmcv-full==1.5.0
     - mmsegmentation==0.27.0
-    - torch==2.7.1
-    - torchvision==0.22.1
-    - torchaudio==2.7.1
+    - torch==2.0.0
+    - torchvision==0.15.0
     - --extra-index-url https://download.pytorch.org/whl/cu128
