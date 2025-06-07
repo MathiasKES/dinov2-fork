@@ -6,7 +6,7 @@ ibot:
   head_n_prototypes: 131072
 train:
   batch_size_per_gpu: 16
-  dataset_path: ImageNet:split=TRAIN:root=/Users/AlfredAqraouXPS15/Desktop/DTU/Year 2/Semester 4/02466 Project work - Bsc of AI and data/02466-Project/dataset/fluorescent/without_masks_224
+  dataset_path: ImageNet:split=TRAIN:root=/work3/s234843/02466-Project/dataset/fluorescent/without_masks_224
   centering: sinkhorn_knopp
 student:
   arch: vit_small
