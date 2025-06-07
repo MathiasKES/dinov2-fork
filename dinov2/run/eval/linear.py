@@ -4,8 +4,8 @@
 # found in the LICENSE file in the root directory of this source tree.
 
 import logging
-import os
-import sys
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 
 from dinov2.eval.linear import get_args_parser as get_linear_args_parser
 from dinov2.logging import setup_logging

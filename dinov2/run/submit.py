@@ -5,7 +5,8 @@
 
 import argparse
 import logging
-import os
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from pathlib import Path
 from typing import List, Optional
 

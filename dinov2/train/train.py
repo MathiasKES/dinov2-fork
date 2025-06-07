@@ -6,7 +6,8 @@
 import argparse
 import logging
 import math
-import os
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from functools import partial
 
 from fvcore.common.checkpoint import PeriodicCheckpointer

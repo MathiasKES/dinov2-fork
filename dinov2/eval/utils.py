@@ -10,6 +10,9 @@ import torch
 from torch import nn
 from torchmetrics import MetricCollection
 
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 from dinov2.data import DatasetWithEnumeratedTargets, SamplerType, make_data_loader
 import dinov2.distributed as distributed
 from dinov2.logging import MetricLogger
