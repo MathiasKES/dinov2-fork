@@ -2,8 +2,8 @@ from pathlib import Path
 from PIL import Image
 import re
 
-input_dir = Path("dataset/fluorescent/without_masks")
-output_dir = Path("dataset/fluorescent/without_masks_224")
+input_dir = Path("/work3/s234843/02466-Project/dataset/fluorescent/without_masks")
+output_dir = Path("/work3/s234843/02466-Project/dataset/fluorescent/without_masks_224")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 count = 0  # Add before the loop
@@ -22,7 +22,7 @@ for tif_path in input_dir.glob("*.tif"):
         out_path = output_dir / tif_path.with_suffix(".png").name
         img.save(out_path)
         count += 1
-        if count >= 1000:
+        if count >= 3000:
             break
 
 print(f"Resized images saved to: {output_dir}")
