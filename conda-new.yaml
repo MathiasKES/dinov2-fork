@@ -1,0 +1,24 @@
+name: dinov2-new
+channels:
+  - nodefaults
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.9
+  - pip
+  - omegaconf
+  - torchmetrics=0.10.3
+  - fvcore
+  - iopath
+  - cmake
+  - ninja
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu117
+      - torch==2.0.0
+      - torchvision==0.15.0
+      - xformers==0.0.18  # works with torch 2.0 on pip; wheels available
+      - git+https://github.com/facebookincubator/submitit
+      - --extra-index-url https://pypi.nvidia.com
+      - cuml-cu11
+      - mmcv-full==1.5.0
+      - mmsegmentation==0.27.0
